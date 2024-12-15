@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall for you</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            
+            <ul>
+                <li><a href="#">Home</a></li.>
+                <li><a href="#">About</a></li.>
+                <li><a href="#">Portfolio</a></li.>
+                <li><a href="#">Contact</a></li.>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>BS INFORMATION AND <br>COMMUNICATIONS TECHNOLOGY</p>
+            <h1>I'M <span>JAN KENNARD</span> <br>SOLANIB</h1>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pcs/pogi.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, I'm Jan Kennard Solanib, I am a BS-ICT Student in West Visayas State University-Lambunao Campus.
+                    Currently, I'm on 2nd yr. College.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('programming skills')">Programming Skills</p>
+                    <p class="tab-links" onclick="opentab('infos')">Infos</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    
+                </div>
+                <div class="tab-contents active-tab">
+                    <ul>
+                        <li><span>UI/UX</span><br>Still Learning hehe</li>
+                        <li><span>Web Development</span><br>Still Learning hehe</li>
+                        <li><span>App Development</span><br>Still Learning hehe</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="infos">
+                    <ul>
+                        <li><span>Birthday</span><br>January 2, 2004</li>
+                        <li><span>Birthplace</span><br>Bingawan Iloilo</li>
+                        <li><span>Civil Status</span><br>Secret lang</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2011-2017</span><br>Bingawan Central Elementary School</li>
+                        <li><span>2017-2023</span><br>Bingawan National Highschool</li>
+                        <li><span>Currently(2023)</span><br>WVSU-LC</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Outputs</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pcs/download2.jpg">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <p>Diri na naka tingob ang Responsive kag WebLayout hehe</p>
+                    <a href="https://drive.google.com/drive/folders/1_rgy7sym5rsn3q4pTJzTHSoMA5935Wli?usp=drive_link"></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="pcs/download4.jpg">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>Medj Fuctional</p>
+                    <a href="https://drive.google.com/drive/folders/16QOr87dKdSWU7z9dzugDwSCAzIivBd5O?usp=drive_link"></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="pcs/download3.jpg">
+                <div class="layer">
+                    <h3>Log-In Form</h3>
+                    <p>Medj Responsive HEHE</p>
+                    <a href="https://drive.google.com/drive/folders/1q8BRQJIESSCyF38vF_e6JVEB4v2oN-So?usp=drive_link"></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    
+</body>
+</html>
